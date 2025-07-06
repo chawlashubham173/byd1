@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -99,6 +99,9 @@ const Footer = () => {
               </a>
               <a href="#" className="bg-red-600 text-white p-2 rounded-full hover:bg-red-700">
                 <FontAwesomeIcon icon={faYoutube} />
+              </a>
+              <a href="#" className="bg-red-400 text-white p-2 rounded-full hover:bg-red-500">
+                <FontAwesomeIcon icon={faGoogle} />
               </a>
               <a href="#" className="bg-blue-400 text-white p-2 rounded-full hover:bg-blue-500">
                 <FontAwesomeIcon icon={faTwitter} />

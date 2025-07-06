@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faCalendarAlt, faUsers, faStar, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faCalendarAlt, faUsers, faStar, faMoneyBillWave, faAddressCard, faFlag, faCamera, faBicycle, faBuilding, faBinoculars, faBolt, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import SearchForm from '../components/SearchForm';
 import PackageCard from '../components/PackageCard';
 import TestimonialCard from '../components/TestimonialCard';
@@ -86,6 +86,24 @@ const travelTips = [
     title: 'Always have local cash',
     text: 'Donec et placerat ante. Etiam et velit in massa.',
     icon: 'money-bill-wave'
+  },
+  {
+    id: 4,
+    title: 'Get guidebooks',
+    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text.',
+    icon: 'binoculars'
+  },
+  {
+    id: 5,
+    title: 'Bring your Camera',
+    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text.',
+    icon: 'camera'
+  },
+  {
+    id: 6,
+    title: 'Power bank',
+    text: 'Contrary to popular belief, Lorem Ipsum is not simply random text.',
+    icon: 'power-off'
   }
 ];
 

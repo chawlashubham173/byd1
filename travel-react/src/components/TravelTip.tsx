@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressCard, faFlag, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faFlag, faMoneyBillWave, faBinoculars, faCamera, faPowerOff, faBicycle, faBuilding, faBolt, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 
 interface TravelTipProps {
   tip: {
@@ -20,6 +20,20 @@ const TravelTip = ({ tip }: TravelTipProps) => {
         return faFlag;
       case 'money-bill-wave':
         return faMoneyBillWave;
+      case 'binoculars':
+        return faBinoculars;
+      case 'camera':
+        return faCamera;
+      case 'power-off':
+        return faPowerOff;
+      case 'bicycle':
+        return faBicycle;
+      case 'building':
+        return faBuilding;
+      case 'bolt':
+        return faBolt;
+      case 'bullhorn':
+        return faBullhorn;
       default:
         return faAddressCard;
     }

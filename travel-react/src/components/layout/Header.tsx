@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faSignInAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUser, faSignInAlt, faUserPlus, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +14,11 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <span className="text-sm">
-              <i className="fa fa-map-marker mr-1"></i>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-1" />
               Lake Road, Suite 180 Farmington Hills, U.S.A
             </span>
             <span className="text-sm">
-              <i className="fa fa-phone mr-1"></i>
+              <FontAwesomeIcon icon={faPhone} className="mr-1" />
               +101-1231-1231
             </span>
           </div>
@@ -50,7 +50,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold text-primary">
-            <img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Travel Logo" className="h-12" />
+            <img src="https://images.pexels.com/photos/1117452/pexels-photo-1117452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Travel Logo" className="h-12" />
             The Travel
           </Link>
 
