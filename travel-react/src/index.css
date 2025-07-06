@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #00BCD4;
+  --secondary-color: #FFC107;
+  --dark-color: #333;
+}
+
+body {
+  font-family: 'Quicksand', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-dark py-2 px-4 rounded-md hover:bg-opacity-90 transition-all;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold mb-6 relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+  }
+}
